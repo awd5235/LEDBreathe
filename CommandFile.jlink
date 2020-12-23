@@ -1,0 +1,6 @@
+connect
+h
+loadfile /Users/Adam/Documents/Arduino/strandtest/strandtest.ino.FEATHER_F405.bin, 0x00000000
+setPC 0x00000000
+go
+q

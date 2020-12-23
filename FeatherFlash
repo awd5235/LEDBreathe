@@ -1,0 +1,7 @@
+#FeatherFlash
+#Use binary created in Arduino to flash STM32F405RG father board via a J-Link SWD connection
+#Note this script is not very portable or scalable. Will need to change device, interface (JTAG/SWD), or firmware file path for each project.
+#Eventual portability is TBD
+
+#!/bin/zsh
+JLinkExe -device STM32F405RG -speed auto -if SWD -CommandFile /Users/Adam/Documents/Arduino/strandtest/CommandFile.jlink
